@@ -1,0 +1,182 @@
+/*****************************************************
+ created and maintained by Kian Kermani 		   (kkermani@sfu.ca) 
+*****************************************************/
+
+/*****************
+* Custom header *
+*****************/
+
+#custom-header {
+  background-color:#fff;
+  padding:24px 40px 40px;
+  position:relative;
+  border-bottom:4px solid #ebebeb;
+}
+
+/*********
+  * Logo *
+*********/
+
+#custom-header .logo-container {
+  float:left;
+  max-width:325px;
+}
+
+#custom-header nav {
+  padding-top:48px;
+  float:right;
+}
+
+#custom-header nav > a {
+  margin-right: 50px;
+}
+
+/***************
+  * Navigation *
+  **************/
+
+#custom-header nav > a, #custom-header .show-updates-dropdown {
+  color: #FFF;
+  display:inline-block;
+  color: #CC0633;
+  font-size: .875rem;
+  text-transform: uppercase;
+}
+
+/*****************
+  * Subscribe ID *
+  ****************/
+
+#custom-header .updates-dropdown {
+  right: 0px;
+  
+}
+
+.flat-button, .masthead .updates-dropdown-container , .layout-content.status-full-history .show-filter.open {
+  background-color: #CC0633;
+
+  }
+
+  /**********************************
+  * Custom header for desktop view *
+  **********************************/
+
+@media screen and (min-width: 900px) {
+  #custom-header .logo-container {
+    position:relative;
+    left:7px;
+    top:7px;
+  }
+  
+  #custom-header nav > a {
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    position:relative;
+    top:1px;
+  }
+
+/*****************************************
+  * Custom subscribe ID for desktop view *
+  ****************************************/
+
+  #custom-header .show-updates-dropdown {
+  /*****************************************
+  * removing subscribe button *
+  ****************************************/
+    display: none;
+    padding:9px 18px 8px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    -ms-border-radius:4px;
+    border-radius:4px;
+    border:2px solid #CC0633;
+  }
+}
+
+  /*********************************
+  * Custom header for tablet view *
+  *********************************/
+
+@media screen and (max-width: 900px) {
+  #custom-header {
+    text-align:center;
+    padding-left:5%;
+    padding-right:5%;
+    padding-bottom:18px;
+  }
+  
+  #custom-header .logo-container {
+    float:none;
+    display:block;
+    margin-bottom:18px;
+    max-width:none;
+  }
+  
+  #custom-header .logo-container .logo {
+    max-width:325px;
+    display:inline-block;
+  }
+  
+  #custom-header nav {
+    float:none;
+  }
+
+  
+  #custom-header nav > a, #custom-header .updates-dropdown-container {
+    float:none;
+    font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  }
+  
+  #custom-header .show-updates-dropdown {
+     /*****************************************
+  * removing subscribe button *
+  ****************************************/
+    display: none;
+    padding:9px 18px 8px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    -ms-border-radius:4px;
+    border-radius:4px;
+    border:2px solid #CC0633;
+  }
+}
+
+  /**********************************
+  * Custom header for mobile view *
+  **********************************/
+
+@media screen and (max-width: 475px) {
+  
+  #custom-header {
+  background-color:#fff;
+  }
+  
+  #custom-header nav > a {
+    font-size:13px;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+     margin-right:20px; 
+  }
+  #custom-header .logo-container .logo {
+    max-width:70%; 
+  }
+  #custom-header nav > a:nth-child(1):before {
+    content:none;
+  }
+
+  #custom-header .show-updates-dropdown {
+     /*****************************************
+  * removing subscribe button *
+  ****************************************/
+    display: none;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    -ms-border-radius:4px;
+    border-radius:4px;
+    border:2px solid #CC0633;
+  }
+}
